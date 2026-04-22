@@ -1,4 +1,4 @@
-# Employee Performance Review System
+# Employee Review System
 
 A fullstack web application for managing employee performance reviews with feedback submission capabilities.
 
