@@ -80,6 +80,7 @@ function App() {
     setAssignments([]);
     setFeedback([]);
     setMessage("Logged out successfully");
+    setTimeout(() => setMessage(""), 3000);
   };
 
   // Employee operations
