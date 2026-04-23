@@ -207,7 +207,6 @@ POST /api/feedback
 1. **In-Memory Data Storage**
    - **Decision**: Use JavaScript objects stored in memory instead of a database
    - **Rationale**: Simplifies setup for demo/prototype, data persists during server runtime
-   - **Trade-off**: Data lost on server restart
    - **Production Path**: Replace with MongoDB, PostgreSQL, or Firebase
 
 2. **JWT Authentication**
@@ -229,12 +228,11 @@ POST /api/feedback
 5. **RESTful API Design**
    - **Decision**: Standard HTTP verbs (GET, POST, PUT, DELETE) with resource-based URLs
    - **Rationale**: Industry standard, predictable, easy to document, works with any frontend
-   - **JSON Format**: All requests/responses use JSON for consistency
+   - **JSON Format**: All requests/responses are in JSON format for consistency
 
 6. **Minimal Dependencies**
-   - **Decision**: Only include essential libraries (Express, React, Axios, Tailwind)
+   - **Decision**: It only includes essential libraries (Express, React, Axios, Tailwind)
    - **Rationale**: Reduces complexity, faster development, smaller bundle size
-   - **Trade-off**: More code for features typically handled by libraries
 
 ### Assumptions
 
@@ -261,8 +259,6 @@ POST /api/feedback
 ---
 
 ## Getting Started - Setup Instructions for First-Time Users
-
-This section provides step-by-step instructions to get the application running locally on your machine.
 
 ### Step 1: Clone/Download the Project
 
@@ -361,7 +357,7 @@ Note: Frontend automatically opens in your default browser.
 
 ## Sample Login Credentials
 
-The application comes pre-loaded with sample users. Use these to test:
+The application comes pre-loaded with sample users. Use these to test in locally:
 
 ### Admin Account
 ```
@@ -438,7 +434,7 @@ Department: IT
 
 ### As an Employee
 
-1. **Login** with employee credentials (jane@example.com or bob@example.com / employee123)
+1. **Login** with employee credentials (admin@example.com[admin user] or user@example.com[employee user] / admin123 or user123)
 2. **View Pending Reviews** - Dashboard shows all assigned reviews
 3. **Submit Feedback**:
    - Click on a review card to open it
