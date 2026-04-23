@@ -253,27 +253,7 @@ POST /api/feedback
    - Implication: Demo application only
    - Production Note: Implement rate limiting middleware
 
-4. **Single Server Instance**
-   - Assumption: Application runs on single Node.js process
-   - Implication: No session sharing across multiple servers
-   - Production Note: Use Redis for session management if scaling
-
-5. **Frontend Hosted Locally**
-   - Assumption: Frontend and backend run on same machine/localhost
-   - Implication: CORS configured for local development
-   - Production Note: Deploy to separate domains, update CORS policies
-
-6. **Anonymous Feedback Not Supported**
-   - Assumption: Feedback is tied to the reviewer's identity
-   - Implication: Employees know who reviewed them
-   - Enhancement: Add anonymous feedback option with admin override
-
-7. **Synchronous Operations**
-   - Assumption: No async job queues or background processing
-   - Implication: All operations complete within HTTP request/response cycle
-   - Production Note: Use Bull, RabbitMQ for long-running operations
-
-8. **Sample Data Pre-loaded**
+4. **Sample Data Pre-loaded**
    - Assumption: Database comes with 3 employees, 2 reviews, and assignments
    - Implication: Demo-ready without manual setup
    - Production Note: Use proper seed management
