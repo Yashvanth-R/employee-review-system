@@ -23,9 +23,9 @@ export const AdminDashboard = ({
         <h2 className="text-lg font-bold mb-6 text-gray-900">Administration</h2>
         <nav className="space-y-2 flex flex-col">
           {[
-            { id: "employees", icon: "👥", label: "Employees" },
-            { id: "reviews", icon: "📋", label: "Reviews" },
-            { id: "assignments", icon: "🎯", label: "Assignments" },
+            { id: "employees", label: "Employees" },
+            { id: "reviews", label: "Reviews" },
+            { id: "assignments", label: "Assignments" },
           ].map((item) => (
             <button
               key={item.id}
